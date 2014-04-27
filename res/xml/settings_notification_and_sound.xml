@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_category_notification" >
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_notification_led_color"
+            android:entries="@array/led_color_entries"
+            android:entryValues="@array/led_color_entry_values"
+            android:key="notification_led_color"
+            android:summary="@string/settings_summary_notification_led_color"
+            android:title="@string/settings_title_notification_led_color" />
+        <PreferenceScreen
+            android:title="@string/settings_activity_title_notification_led_flash"
+            android:summary="@string/settings_activity_summary_notification_led_flash" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.teck4.so04emod.SettingsNotificationLEDFlash"
+                android:targetPackage="com.teck4.so04emod" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_sound" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_volume_key_sound"
+            android:summary="@string/settings_summary_disable_volume_key_sound"
+            android:title="@string/settings_title_disable_volume_key_sound" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_safe_media_volume"
+            android:summary="@string/settings_summary_disable_safe_media_volume"
+            android:title="@string/settings_title_disable_safe_media_volume" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_screenshot_sound"
+            android:summary="@string/settings_summary_disable_screenshot_sound"
+            android:title="@string/settings_title_disable_screenshot_sound" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

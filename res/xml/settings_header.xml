@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen
+        android:icon="@drawable/ic_settings_ui"
+        android:title="@string/settings_activity_title_ui" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.teck4.so04emod.SettingsUI"
+            android:targetPackage="com.teck4.so04emod" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/ic_settings_network"
+        android:title="@string/settings_activity_title_network" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.teck4.so04emod.SettingsNetwork"
+            android:targetPackage="com.teck4.so04emod" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/ic_settings_sound"
+        android:title="@string/settings_activity_title_notification_and_sound" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.teck4.so04emod.SettingsNotificationAndSound"
+            android:targetPackage="com.teck4.so04emod" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/ic_settings_battery"
+        android:title="@string/settings_activity_title_battery" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.teck4.so04emod.SettingsBattery"
+            android:targetPackage="com.teck4.so04emod" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/ic_settings_applications"
+        android:title="@string/settings_activity_title_applications" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.teck4.so04emod.SettingsApplications"
+            android:targetPackage="com.teck4.so04emod" />
+    </PreferenceScreen>
+<!--
+    <PreferenceScreen
+        android:icon="@drawable/ic_settings_other"
+        android:title="@string/settings_activity_title_other"
+        android:summary="@string/settings_activity_summary_other" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.teck4.so04emod.SettingsOther"
+            android:targetPackage="com.teck4.so04emod" />
+    </PreferenceScreen>
+ -->
+</PreferenceScreen>

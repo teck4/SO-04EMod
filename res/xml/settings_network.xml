@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_category_mobile_network" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_mobile_date_switch_messages"
+            android:summary="@string/settings_summary_disable_mobile_date_switch_messages"
+            android:title="@string/settings_title_disable_mobile_date_switch_messages" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_network_mode_lte:wcdma_only"
+            android:summary="@string/settings_summary_enable_network_mode_lte:wcdma_only"
+            android:title="@string/settings_title_enable_network_mode_lte:wcdma_only" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_tethering" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_hide_tethering_dialog"
+            android:summary="@string/settings_summary_enable_hide_tethering_dialog"
+            android:title="@string/settings_title_enable_hide_tethering_dialog" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

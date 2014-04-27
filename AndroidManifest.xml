@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teck4.so04emod"
+    android:versionCode="1000200"
+    android:versionName="@string/version_name">
+
+    <uses-sdk android:minSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeLight" >
+
+        <meta-data android:value="true" android:name="xposedmodule" />
+        <meta-data android:value="2.0*" android:name="xposedminversion" />
+        <meta-data android:value="@string/description" android:name="xposeddescription" />
+
+        <activity android:name=".Settings" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SettingsUI" android:label="@string/settings_activity_title_ui" />
+        <activity android:name=".SettingsClock" android:label="@string/settings_activity_title_clock" android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".SettingsNetwork" android:label="@string/settings_activity_title_network" />
+        <activity android:name=".SettingsNotificationAndSound" android:label="@string/settings_activity_title_notification_and_sound" />
+        <activity android:name=".SettingsNotificationLEDFlash" android:label="@string/settings_activity_title_notification_led_flash" android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".SettingsBattery" android:label="@string/settings_activity_title_battery" />
+        <activity android:name=".SettingsBatteryLEDFlash" android:label="@string/settings_activity_title_battery_warning_led_flash" android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".SettingsApplications" android:label="@string/settings_activity_title_applications" />
+        <activity android:name=".SettingsAbout" android:label="@string/settings_activity_title_about" />
+    </application>
+
+</manifest>

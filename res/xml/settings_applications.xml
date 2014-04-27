@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_category_applications_camera" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_camera_sound_option"
+            android:summary="@string/settings_summary_enable_camera_sound_option"
+            android:title="@string/settings_title_enable_camera_sound_option" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/settings_category_applications_phone" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_call_recording"
+            android:summary="@string/settings_summary_enable_phone_recording"
+            android:title="@string/settings_title_enable_phone_recording" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/settings_category_applications_fmradio" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="fmradio_without_headset"
+            android:summary="@string/settings_summary_fmradio_without_headset"
+            android:title="@string/settings_title_fmradio_without_headset" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

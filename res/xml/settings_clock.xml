@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="center_clock"
+        android:summary="@string/settings_summary_center_clock"
+        android:title="@string/settings_title_center_clock" />
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:inputType="textMultiLine"
+        android:key="clock_format"
+        android:summary="@string/settings_summary_clock_format"
+        android:title="@string/settings_title_clock_format" />
+
+    <ListPreference
+        android:defaultValue=""
+        android:dialogTitle="@string/settings_title_clock_font_size"
+        android:entries="@array/clock_font_size_entries"
+        android:entryValues="@array/clock_font_size_entry_values"
+        android:key="clock_font_size"
+        android:summary="@string/settings_summary_clock_font_size"
+        android:title="@string/settings_title_clock_font_size" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="clock_bold"
+        android:summary="@string/settings_summary_clock_bold"
+        android:title="@string/settings_title_clock_bold" />
+
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CustomPreferenceCategory">
+        <item name="android:layout">@layout/custom_preference_category</item>
+    </style>
+    
+    <style name="CustomPreferenceCategoryDark">
+        <item name="android:layout">@layout/custom_preference_category_dark</item>
+    </style>
+
+</resources>

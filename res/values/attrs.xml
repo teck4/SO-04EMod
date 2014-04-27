@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="keyCode" format="integer" />
+    <attr name="keyRepeat" format="boolean" />
+    <attr name="glowBackground" format="reference" />
+    <attr name="minSize" format="dimension" />
+    <attr name="maxSize" format="dimension" />
+    <attr name="holdTime" format="integer" />
+    <attr name="decayTime" format="integer" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    
+    <declare-styleable name="LimitableNumberEditTextPreference">
+        <attr name="maxValue" format="integer" />
+        <attr name="minValue" format="integer" />
+        <attr name="overMessage" format="string" />
+        <attr name="underMessage" format="string" />
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:so04emod="http://schemas.android.com/apk/res/com.teck4.so04emod" >
+
+    <com.teck4.so04emod.LimitableNumberEditTextPreference
+        android:defaultValue=""
+        android:key="notification_led_flash_on"
+        android:maxLength="4"
+        android:summary="@string/settings_summary_notification_led_flash_on"
+        android:title="@string/settings_title_notification_led_flash_on"
+        so04emod:overMessage="@string/error_led_flash_ms"
+        so04emod:maxValue="9900" />
+    <com.teck4.so04emod.LimitableNumberEditTextPreference
+        android:defaultValue=""
+        android:key="notification_led_flash_off"
+        android:maxLength="4"
+        android:summary="@string/settings_summary_notification_led_flash_off"
+        android:title="@string/settings_title_notification_led_flash_off"
+        so04emod:overMessage="@string/error_led_flash_ms"
+        so04emod:maxValue="9900" />
+
+</PreferenceScreen>

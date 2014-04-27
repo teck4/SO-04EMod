@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_category_charging" >
+
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_battery_maximum_led_color"
+            android:entries="@array/led_color_entries"
+            android:entryValues="@array/led_color_entry_values"
+            android:key="battery_maximum_led_color"
+            android:summary="@string/settings_summary_battery_maximum_led_color"
+            android:title="@string/settings_title_battery_maximum_led_color" />
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_battery_full_led_color"
+            android:entries="@array/led_color_entries"
+            android:entryValues="@array/led_color_entry_values"
+            android:key="battery_full_led_color"
+            android:summary="@string/settings_summary_battery_full_led_color"
+            android:title="@string/settings_title_battery_full_led_color" />
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_battery_medium_led_color"
+            android:entries="@array/led_color_entries"
+            android:entryValues="@array/led_color_entry_values"
+            android:key="battery_medium_led_color"
+            android:summary="@string/settings_summary_battery_medium_led_color"
+            android:title="@string/settings_title_battery_medium_led_color" />
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_battery_low_led_color"
+            android:entries="@array/led_color_entries"
+            android:entryValues="@array/led_color_entry_values"
+            android:key="battery_low_led_color"
+            android:summary="@string/settings_summary_battery_low_led_color"
+            android:title="@string/settings_title_battery_low_led_color" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_battery_warning" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_battery_warning_dialog"
+            android:summary="@string/settings_summary_disable_battery_warning_dialog"
+            android:title="@string/settings_title_disable_battery_warning_dialog" />
+
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_battery_warning_led_color"
+            android:entries="@array/led_color_entries"
+            android:entryValues="@array/led_color_entry_values"
+            android:key="battery_warning_led_color"
+            android:summary="@string/settings_summary_battery_warning_led_color"
+            android:title="@string/settings_title_battery_warning_led_color" />
+
+        <PreferenceScreen
+            android:title="@string/settings_activity_title_battery_warning_led_flash"
+            android:summary="@string/settings_activity_summary_battery_warning_led_flash" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.teck4.so04emod.SettingsBatteryLEDFlash"
+                android:targetPackage="com.teck4.so04emod" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

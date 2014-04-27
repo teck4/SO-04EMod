@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_category_navigation_bar" >
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/settings_title_navigation_bar_style"
+            android:entries="@array/navbar_entries"
+            android:entryValues="@array/navbar_entry_values"
+            android:key="navigation_bar_style"
+            android:title="@string/settings_title_navigation_bar_style" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_search_panel"
+            android:summary="@string/settings_summary_disable_search_panel"
+            android:title="@string/settings_title_disable_search_panel" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_status_bar" >
+        <PreferenceScreen
+            android:title="@string/settings_activity_title_clock"
+            android:summary="@string/settings_activity_summary_clock" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.teck4.so04emod.SettingsClock"
+                android:targetPackage="com.teck4.so04emod" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="no_battery_text"
+            android:summary="@string/settings_summary_no_battery_text"
+            android:title="@string/settings_title_no_battery_text" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_lock_screen" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_lock_screen_rotation"
+            android:summary="@string/settings_summary_enable_lock_screen_rotation"
+            android:title="@string/settings_title_enable_lock_screen_rotation" />
+        </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_other_ui" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="transparent_ui"
+            android:summary="@string/settings_summary_transparent_ui"
+            android:title="@string/settings_title_transparent_ui" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_all_screen_rotations"
+            android:summary="@string/settings_summary_enable_all_screen_rotations"
+            android:title="@string/settings_title_enable_all_screen_rotations" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_unnecessary_menu_key"
+            android:summary="@string/settings_summary_disable_unnecessary_menu_key"
+            android:title="@string/settings_title_disable_unnecessary_menu_key" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="change_position_kill_all_button"
+            android:summary="@string/settings_summary_change_position_kill_all_button"
+            android:title="@string/settings_title_change_position_kill_all_button" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

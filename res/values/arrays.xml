@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navbar_entries">
+        <item>@string/navbar_normal</item>
+        <item>@string/navbar_3bt</item>
+        <item>@string/navbar_5bt_search</item>
+        <item>@string/navbar_5bt_power</item>
+    </string-array>
+    <string-array name="navbar_entry_values">
+        <item></item>
+        <item>3Button</item>
+        <item>5Button_search</item>
+        <item>5Button_power</item>
+    </string-array>
+    <string-array name="clock_font_size_entries">
+        <item>@string/clock_font_size_large</item>
+        <item>@string/clock_font_size_normal</item>
+        <item>@string/clock_font_size_small</item>
+        <item>@string/clock_font_size_extra_small</item>
+    </string-array>
+    <string-array name="clock_font_size_entry_values">
+        <item>Large</item>
+        <item></item>
+        <item>Small</item>
+        <item>Extra_small</item>
+    </string-array>
+    <string-array name="led_color_entries">
+        <item>デフォルト</item>
+        <item>レッド</item>
+        <item>グリーン</item>
+        <item>ブルー</item>
+        <item>オレンジ</item>
+        <item>シアン</item>
+        <item>マゼンタ</item>
+        <item>イエロー</item>
+        <item>ホワイト</item>
+        <item>オフ</item>
+    </string-array>
+    <string-array name="led_color_entry_values">
+        <item></item>
+        <item>ffff0000</item>
+        <item>ff00ff00</item>
+        <item>ff0000ff</item>
+        <item>ffff3000</item>
+        <item>ff00ffff</item>
+        <item>ffff00ff</item>
+        <item>ffffff00</item>
+        <item>ffffffff</item>
+        <item>00000000</item>
+    </string-array>
+    
+</resources>
